@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a5a23cc-ec99-4605-9baf-a9970fb70ff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assembly/bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/util/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Properties/components.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Properties/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/core/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/init/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/init/Init.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/server/JettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/server/JettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/service/GitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/service/GitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/service/GitServiceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/service/GitServiceHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="462">
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -44,15 +36,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/server/JettyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
+            <state relative-caret-position="388">
               <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#614#615#0" expanded="true" />
                 <element signature="e#658#659#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/core/Configuration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,15 +114,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -127,6 +124,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -143,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/util/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/init/Init.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/server/JettyServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/core/Configuration.java" />
       </list>
     </option>
   </component>
@@ -153,11 +152,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="160" />
-    <option name="y" value="100" />
-    <option name="width" value="960" />
-    <option name="height" value="600" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="715" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -207,6 +205,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gitbot" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitComponentManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitComponentManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gitbot" type="462c0819:PsiDirectoryNode" />
               <item name="init" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,15 +233,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gitbot" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitComponentManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GitComponentManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gitbot" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GitComponentManager" type="b2602c69:ProjectViewProjectNode" />
@@ -300,7 +298,7 @@
       <updated>1581270987808</updated>
       <workItem from="1581270989919" duration="315000" />
       <workItem from="1581283280848" duration="1134000" />
-      <workItem from="1581318830115" duration="4840000" />
+      <workItem from="1581318830115" duration="6200000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1581276126839</created>
@@ -323,14 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581284053294</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="structure step two">
+      <created>1581351867422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581351867422</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7281000" />
+    <option name="totallyTimeSpent" value="8641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="715" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
@@ -373,7 +378,8 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="second comm" />
     <MESSAGE value="structure step one" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure step one" />
+    <MESSAGE value="structure step two" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure step two" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Init.java" />
@@ -391,13 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -429,6 +428,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/init/Init.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -438,12 +444,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/server/JettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
+        <state relative-caret-position="388">
           <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#614#615#0" expanded="true" />
             <element signature="e#658#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/core/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
           </folding>
         </state>
       </provider>
