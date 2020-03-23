@@ -47,4 +47,14 @@ public class JettyServer {
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
     }
+
+    public void shutdown() {
+        try {
+            jettyServer.destroy();
+            jerseyServlet.stop();
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+        }
+
+    }
 }
