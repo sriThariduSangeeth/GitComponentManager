@@ -1,5 +1,7 @@
 package com.sangeeth.gitbot.server;
 
+import com.sangeeth.gitbot.core.ConfigXmlProperty;
+import org.apache.commons.configuration2.builder.fluent.Configurations;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.eclipse.jetty.server.Server;
@@ -43,9 +45,28 @@ public class JettyServer {
     }
 
     public void start(){
-        //this.serverClasses = Configurations.getInstance().getServerClassNames();
+        this.serverClasses = ConfigXmlProperty.getInstance().getServerClassNames();
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
+
+        jettyServer = new Server(serverPort);
+        jettyServer.setHandler(context);
+
+        jerseyServlet = context.addServlet(
+                org.glassfish.jersey.servlet.ServletContainer.class, "/dataservice/*");
+        jerseyServlet.setInitOrder(0);
+
+        jerseyServlet.setInitParameter(
+                "jersey.config.server.provider.classnames",
+                this.serverClasses);
+
+        try {
+            jettyServer.start();
+            jettyServer.join();
+        } catch (Exception ioex) {
+            logger.error(ioex.getMessage(), ioex);
+        }
+
     }
 
     public void shutdown() {

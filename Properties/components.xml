@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="git" class="com.sangeeth.gitbot.configurations.Configuration">
+        <constructor-arg name="connectorReference" value="com.sangeeth.gitbot.service.GitService"/>
+        <constructor-arg>
+            <list>
+                <bean class="com.sangeeth.gitbot.configurations.Properties">
+                    <constructor-arg name="instanceName" value="instance1"/>
+                    <constructor-arg name="propertyMap">
+                        <map>
+                            <entry key="userName" value="admin"/>
+                            <entry key="password" value="wZ5aB6gp7HNpVXyMOwHxXA=="/>
+                            <entry key="baseUrl" value="http://cmuinsightv3:7181"/>
+                            <entry key="projects" value="Goodwood project"/>
+                        </map>
+                    </constructor-arg>
+                </bean>
+                <bean class="com.sangeeth.gitbot.configurations.Properties">
+                    <constructor-arg name="instanceName" value="instance2"/>
+                    <constructor-arg name="propertyMap">
+                        <map>
+                            <entry key="userName" value="admin"/>
+                            <entry key="password" value="admin"/>
+                            <entry key="baseUrl" value="http://172.22.228.121:8081"/>
+                        </map>
+                    </constructor-arg>
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>
