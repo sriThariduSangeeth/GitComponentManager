@@ -12,10 +12,10 @@
                     <constructor-arg name="instanceName" value="instance1"/>
                     <constructor-arg name="propertyMap">
                         <map>
-                            <entry key="userName" value="admin"/>
-                            <entry key="password" value="wZ5aB6gp7HNpVXyMOwHxXA=="/>
-                            <entry key="baseUrl" value="http://cmuinsightv3:7181"/>
-                            <entry key="projects" value="Goodwood project"/>
+                            <entry key="baseUrl" value="https://api.github.com/"/>
+                            <entry key="repo" value="sriThariduSangeeth"/>
+                            <entry key="owner" value="TestAndroid"/>
+                            <entry key="authToken" value="a955a29bbcc5277a2b671adab0574706364fed09"/>
                         </map>
                     </constructor-arg>
                 </bean>
@@ -23,9 +23,9 @@
                     <constructor-arg name="instanceName" value="instance2"/>
                     <constructor-arg name="propertyMap">
                         <map>
-                            <entry key="userName" value="admin"/>
-                            <entry key="password" value="admin"/>
-                            <entry key="baseUrl" value="http://172.22.228.121:8081"/>
+                            <entry key="baseUrl" value="https://api.github.com/"/>
+                            <entry key="repo" value="admin"/>
+                            <entry key="owner" value="admin"/>
                         </map>
                     </constructor-arg>
                 </bean>
