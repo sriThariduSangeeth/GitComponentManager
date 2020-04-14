@@ -1,0 +1,366 @@
+2020-03-25 05:44:05 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1e802ef9: startup date [Wed Mar 25 05:44:05 IST 2020]; root of context hierarchy
+2020-03-25 05:44:06 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-03-25 05:45:08 INFO  JettyServer:30 - Shutting down jetty.....
+2020-03-25 05:45:08 ERROR JettyServer:36 - 
+java.lang.NullPointerException
+	at com.sangeeth.gitbot.server.JettyServer$1.run(JettyServer.java:31)
+2020-03-25 07:05:42 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@91161c7: startup date [Wed Mar 25 07:05:42 IST 2020]; root of context hierarchy
+2020-03-25 07:05:42 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-03-25 07:05:43 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@91161c7: startup date [Wed Mar 25 07:05:42 IST 2020]; root of context hierarchy
+2020-03-25 07:06:03 INFO  JettyServer:30 - Shutting down jetty.....
+2020-03-25 07:06:03 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-03-25 07:06:10 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1e802ef9: startup date [Wed Mar 25 07:06:10 IST 2020]; root of context hierarchy
+2020-03-25 07:06:10 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-03-25 07:06:11 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@1e802ef9: startup date [Wed Mar 25 07:06:10 IST 2020]; root of context hierarchy
+2020-03-25 07:14:17 INFO  JettyServer:30 - Shutting down jetty.....
+2020-03-25 07:14:17 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-03-28 01:09:01 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1bce4f0a: startup date [Sat Mar 28 01:09:01 IST 2020]; root of context hierarchy
+2020-03-28 01:09:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-03-28 01:09:02 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@1bce4f0a: startup date [Sat Mar 28 01:09:01 IST 2020]; root of context hierarchy
+2020-03-28 01:10:18 INFO  JettyServer:30 - Shutting down jetty.....
+2020-03-28 01:10:18 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-03-28 01:10:38 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@91161c7: startup date [Sat Mar 28 01:10:38 IST 2020]; root of context hierarchy
+2020-03-28 01:10:38 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-03-28 01:10:39 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@91161c7: startup date [Sat Mar 28 01:10:38 IST 2020]; root of context hierarchy
+2020-03-28 01:11:41 INFO  JettyServer:30 - Shutting down jetty.....
+2020-03-28 01:11:41 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 14:05:27 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1e802ef9: startup date [Tue Apr 14 14:05:27 IST 2020]; root of context hierarchy
+2020-04-14 14:05:27 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 14:05:28 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@1e802ef9: startup date [Tue Apr 14 14:05:27 IST 2020]; root of context hierarchy
+2020-04-14 14:08:57 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 14:08:57 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 14:59:33 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1e802ef9: startup date [Tue Apr 14 14:59:33 IST 2020]; root of context hierarchy
+2020-04-14 14:59:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 14:59:34 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@1e802ef9: startup date [Tue Apr 14 14:59:33 IST 2020]; root of context hierarchy
+2020-04-14 15:02:07 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 15:02:07 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 16:26:21 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 16:26:21 IST 2020]; root of context hierarchy
+2020-04-14 16:26:21 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 16:26:22 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 16:26:21 IST 2020]; root of context hierarchy
+2020-04-14 16:27:19 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 16:27:19 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 16:41:24 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 16:41:24 IST 2020]; root of context hierarchy
+2020-04-14 16:41:24 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 16:41:25 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 16:41:24 IST 2020]; root of context hierarchy
+2020-04-14 16:44:24 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 16:44:24 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 16:45:12 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 16:45:12 IST 2020]; root of context hierarchy
+2020-04-14 16:45:12 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 16:45:14 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 16:45:12 IST 2020]; root of context hierarchy
+2020-04-14 16:53:29 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 16:53:29 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 17:50:35 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 17:50:35 IST 2020]; root of context hierarchy
+2020-04-14 17:50:36 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 17:50:37 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 17:50:35 IST 2020]; root of context hierarchy
+2020-04-14 17:53:00 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 17:53:00 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 17:53:02 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 17:53:02 IST 2020]; root of context hierarchy
+2020-04-14 17:53:02 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 17:53:03 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 17:53:02 IST 2020]; root of context hierarchy
+2020-04-14 17:54:03 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 17:54:03 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 17:59:12 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 17:59:12 IST 2020]; root of context hierarchy
+2020-04-14 17:59:12 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 17:59:13 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 17:59:12 IST 2020]; root of context hierarchy
+2020-04-14 18:03:07 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:03:07 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:03:14 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:03:14 IST 2020]; root of context hierarchy
+2020-04-14 18:03:14 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:03:14 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:03:14 IST 2020]; root of context hierarchy
+2020-04-14 18:04:24 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:04:24 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:09:51 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:09:51 IST 2020]; root of context hierarchy
+2020-04-14 18:09:51 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:09:51 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:09:51 IST 2020]; root of context hierarchy
+2020-04-14 18:14:08 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:14:08 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:14:14 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:14:14 IST 2020]; root of context hierarchy
+2020-04-14 18:14:14 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:14:16 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:14:14 IST 2020]; root of context hierarchy
+2020-04-14 18:17:39 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:17:39 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:17:57 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:17:57 IST 2020]; root of context hierarchy
+2020-04-14 18:17:57 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:17:57 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:17:57 IST 2020]; root of context hierarchy
+2020-04-14 18:18:28 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:18:28 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:18:34 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:18:34 IST 2020]; root of context hierarchy
+2020-04-14 18:18:34 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:18:35 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:18:34 IST 2020]; root of context hierarchy
+2020-04-14 18:19:41 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:19:41 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:19:43 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:19:43 IST 2020]; root of context hierarchy
+2020-04-14 18:19:43 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:19:44 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:19:43 IST 2020]; root of context hierarchy
+2020-04-14 18:21:25 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:21:25 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:21:27 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:21:27 IST 2020]; root of context hierarchy
+2020-04-14 18:21:27 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:21:28 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:21:27 IST 2020]; root of context hierarchy
+2020-04-14 18:22:16 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:22:16 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:22:21 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:22:21 IST 2020]; root of context hierarchy
+2020-04-14 18:22:21 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:22:22 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:22:21 IST 2020]; root of context hierarchy
+2020-04-14 18:29:21 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:29:21 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:29:26 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:29:26 IST 2020]; root of context hierarchy
+2020-04-14 18:29:26 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:29:26 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:29:26 IST 2020]; root of context hierarchy
+2020-04-14 18:32:19 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:32:19 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:32:25 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:32:25 IST 2020]; root of context hierarchy
+2020-04-14 18:32:25 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:32:25 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:32:25 ERROR JettyServer:36 - 
+java.lang.NullPointerException
+	at com.sangeeth.gitbot.server.JettyServer$1.run(JettyServer.java:31)
+2020-04-14 18:36:26 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:36:26 IST 2020]; root of context hierarchy
+2020-04-14 18:36:26 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:36:27 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:36:26 IST 2020]; root of context hierarchy
+2020-04-14 18:38:01 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:38:01 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:38:05 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:38:05 IST 2020]; root of context hierarchy
+2020-04-14 18:38:05 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:38:05 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:38:05 IST 2020]; root of context hierarchy
+2020-04-14 18:40:23 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:40:23 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:40:28 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:40:28 IST 2020]; root of context hierarchy
+2020-04-14 18:40:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:40:29 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:40:28 IST 2020]; root of context hierarchy
+2020-04-14 18:47:22 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:47:22 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:49:56 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:49:56 IST 2020]; root of context hierarchy
+2020-04-14 18:49:56 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:49:56 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:49:56 IST 2020]; root of context hierarchy
+2020-04-14 18:53:18 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:53:19 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 18:54:55 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:54:55 IST 2020]; root of context hierarchy
+2020-04-14 18:54:55 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 18:54:55 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 18:54:55 IST 2020]; root of context hierarchy
+2020-04-14 18:57:49 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 18:57:49 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 19:00:20 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 19:00:20 IST 2020]; root of context hierarchy
+2020-04-14 19:00:20 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 19:00:20 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 19:00:20 IST 2020]; root of context hierarchy
+2020-04-14 19:10:58 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 19:10:58 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 19:11:07 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 19:11:07 IST 2020]; root of context hierarchy
+2020-04-14 19:11:07 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 19:11:07 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@59d016c9: startup date [Tue Apr 14 19:11:07 IST 2020]; root of context hierarchy
+2020-04-14 19:13:37 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 19:13:37 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 20:00:49 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 20:00:48 IST 2020]; root of context hierarchy
+2020-04-14 20:00:49 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 20:00:50 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 20:00:48 IST 2020]; root of context hierarchy
+2020-04-14 20:02:24 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 20:02:24 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 20:02:30 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 20:02:29 IST 2020]; root of context hierarchy
+2020-04-14 20:02:30 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 20:02:30 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 20:02:29 IST 2020]; root of context hierarchy
+2020-04-14 20:18:34 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 20:18:34 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 21:11:57 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 21:11:57 IST 2020]; root of context hierarchy
+2020-04-14 21:11:57 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 21:11:57 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 21:11:57 IST 2020]; root of context hierarchy
+2020-04-14 21:17:01 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 21:17:01 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 21:27:23 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:27:23 IST 2020]; root of context hierarchy
+2020-04-14 21:27:24 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 21:27:24 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:27:23 IST 2020]; root of context hierarchy
+2020-04-14 21:28:42 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 21:28:42 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 21:28:47 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:28:47 IST 2020]; root of context hierarchy
+2020-04-14 21:28:47 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 21:28:47 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:28:47 IST 2020]; root of context hierarchy
+2020-04-14 21:30:15 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 21:30:15 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 21:30:17 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:30:17 IST 2020]; root of context hierarchy
+2020-04-14 21:30:17 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 21:30:17 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:30:17 IST 2020]; root of context hierarchy
+2020-04-14 21:30:39 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 21:30:39 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 21:30:44 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:30:44 IST 2020]; root of context hierarchy
+2020-04-14 21:30:44 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 21:30:44 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:30:44 IST 2020]; root of context hierarchy
+2020-04-14 21:31:25 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 21:31:25 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 21:31:27 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:31:27 IST 2020]; root of context hierarchy
+2020-04-14 21:31:27 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 21:31:27 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@53b32d7: startup date [Tue Apr 14 21:31:27 IST 2020]; root of context hierarchy
+2020-04-14 21:32:17 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 21:32:17 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 21:32:26 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 21:32:26 IST 2020]; root of context hierarchy
+2020-04-14 21:32:26 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 21:32:26 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 21:32:26 IST 2020]; root of context hierarchy
+2020-04-14 21:36:13 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 21:36:13 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-14 21:36:22 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 21:36:22 IST 2020]; root of context hierarchy
+2020-04-14 21:36:22 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-14 21:36:23 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Tue Apr 14 21:36:22 IST 2020]; root of context hierarchy
+2020-04-14 21:49:38 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-14 21:49:38 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:21:27 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:21:27 IST 2020]; root of context hierarchy
+2020-04-15 01:21:27 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:21:28 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:21:27 IST 2020]; root of context hierarchy
+2020-04-15 01:21:42 ERROR ETLJsonObjectMapper:60 - Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1329)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1092)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:598)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3011)
+	at com.sangeeth.gitbot.util.ETLJsonObjectMapper.toMap(ETLJsonObjectMapper.java:57)
+	at com.sangeeth.gitbot.service.GitServiceHelper.getAllEvents(GitServiceHelper.java:83)
+	at com.sangeeth.gitbot.service.GitService.lambda$getEventList$1(GitService.java:93)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-15 01:22:11 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:22:11 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:22:18 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:22:18 IST 2020]; root of context hierarchy
+2020-04-15 01:22:18 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:22:19 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:22:18 IST 2020]; root of context hierarchy
+2020-04-15 01:23:48 ERROR ETLJsonObjectMapper:60 - Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1329)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1092)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:598)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3011)
+	at com.sangeeth.gitbot.util.ETLJsonObjectMapper.toMap(ETLJsonObjectMapper.java:57)
+	at com.sangeeth.gitbot.service.GitServiceHelper.getAllEvents(GitServiceHelper.java:83)
+	at com.sangeeth.gitbot.service.GitService.lambda$getEventList$1(GitService.java:93)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-15 01:27:58 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:27:58 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:28:11 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:28:11 IST 2020]; root of context hierarchy
+2020-04-15 01:28:11 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:28:12 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:28:11 IST 2020]; root of context hierarchy
+2020-04-15 01:28:26 ERROR ETLJsonObjectMapper:60 - Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1329)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1092)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:598)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3011)
+	at com.sangeeth.gitbot.util.ETLJsonObjectMapper.toMap(ETLJsonObjectMapper.java:57)
+	at com.sangeeth.gitbot.service.GitServiceHelper.getAllEvents(GitServiceHelper.java:83)
+	at com.sangeeth.gitbot.service.GitService.lambda$getEventList$1(GitService.java:92)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-15 01:31:08 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:31:08 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:31:17 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:31:17 IST 2020]; root of context hierarchy
+2020-04-15 01:31:17 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:31:17 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:31:17 IST 2020]; root of context hierarchy
+2020-04-15 01:31:49 ERROR ETLJsonObjectMapper:60 - Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1329)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1092)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:598)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3011)
+	at com.sangeeth.gitbot.util.ETLJsonObjectMapper.toMap(ETLJsonObjectMapper.java:57)
+	at com.sangeeth.gitbot.service.GitServiceHelper.getAllEvents(GitServiceHelper.java:83)
+	at com.sangeeth.gitbot.service.GitService.lambda$getEventList$1(GitService.java:92)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-15 01:34:49 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:34:49 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:34:56 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:34:56 IST 2020]; root of context hierarchy
+2020-04-15 01:34:56 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:34:57 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:34:56 IST 2020]; root of context hierarchy
+2020-04-15 01:40:08 ERROR ETLJsonObjectMapper:60 - Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1329)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1092)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:598)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3011)
+	at com.sangeeth.gitbot.util.ETLJsonObjectMapper.toMap(ETLJsonObjectMapper.java:57)
+	at com.sangeeth.gitbot.service.GitServiceHelper.getAllEvents(GitServiceHelper.java:83)
+	at com.sangeeth.gitbot.service.GitService.lambda$getEventList$1(GitService.java:92)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-15 01:45:53 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:45:53 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:45:59 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:45:59 IST 2020]; root of context hierarchy
+2020-04-15 01:45:59 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:45:59 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:45:59 IST 2020]; root of context hierarchy
+2020-04-15 01:47:05 ERROR ETLJsonObjectMapper:60 - Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of java.util.LinkedHashMap out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1329)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1092)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:598)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3011)
+	at com.sangeeth.gitbot.util.ETLJsonObjectMapper.toMap(ETLJsonObjectMapper.java:57)
+	at com.sangeeth.gitbot.service.GitServiceHelper.getAllEvents(GitServiceHelper.java:83)
+	at com.sangeeth.gitbot.service.GitService.lambda$getEventList$1(GitService.java:93)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-15 01:49:54 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:49:54 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:50:14 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:50:14 IST 2020]; root of context hierarchy
+2020-04-15 01:50:15 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:50:15 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:50:14 IST 2020]; root of context hierarchy
+2020-04-15 01:52:03 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:52:03 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:52:25 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:52:25 IST 2020]; root of context hierarchy
+2020-04-15 01:52:25 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:52:25 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:52:25 IST 2020]; root of context hierarchy
+2020-04-15 01:53:08 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:53:08 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:53:10 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:53:10 IST 2020]; root of context hierarchy
+2020-04-15 01:53:10 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:53:10 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:53:10 IST 2020]; root of context hierarchy
+2020-04-15 01:54:47 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:54:47 INFO  JettyServer:34 - jetty terminated successfully.....
+2020-04-15 01:54:53 INFO  FileSystemXmlApplicationContext:589 - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:54:53 IST 2020]; root of context hierarchy
+2020-04-15 01:54:54 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [/Users/dtsangeeth/Desktop/Projects/GitComponentManager/Properties/components.xml]
+2020-04-15 01:54:54 INFO  FileSystemXmlApplicationContext:989 - Closing org.springframework.context.support.FileSystemXmlApplicationContext@20d28811: startup date [Wed Apr 15 01:54:53 IST 2020]; root of context hierarchy
+2020-04-15 01:55:59 INFO  JettyServer:30 - Shutting down jetty.....
+2020-04-15 01:55:59 INFO  JettyServer:34 - jetty terminated successfully.....
