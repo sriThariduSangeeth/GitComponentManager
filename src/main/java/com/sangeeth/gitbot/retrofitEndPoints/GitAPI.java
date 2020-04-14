@@ -25,22 +25,28 @@ public interface GitAPI {
     /**
      * Gets the projects
      *
-     * @param jiraProjectKey - name of the project
+     * @param gitRepo - name of the repositaory
+     * @param gitOwner - name of the owner
+     *
      * @return
      */
-    @GET("/rest/api/2/project/{jiraProjectKey}")
-    Call<Object> getProject(@Path("jiraProjectKey") String jiraProjectKey);
+    @GET("repos/{gitOwner}/{gitRepo}/issues")
+    Call<Object> getAllClosedIssues(@Path("gitRepo") String gitRepo, @Path("gitOwner") String gitOwner);
+
 
     /**
-     * map keys = project , startAt , maxResults
-     * map values = projectKey , offset , limit
-     * project=<<projectKey>>&startAt=<<offset>>&maxResults=<<limit>>
+     * Gets the projects
      *
-     * @param query
+     * @param query - queary and offset
+     *
      * @return
      */
-    @GET("/rest/api/2/user/assignable/search")
-    Call<Object> getUserAssignable(@QueryMap HashMap<String, Object> query);
+    @GET("/search/issues")
+    Call<Object> getIssues(@QueryMap (encoded = true) HashMap<String, Object> query);
+
+
+    @GET("/repos/{gitOwner}/{gitRepo}/issues/events")
+    Call<Object> getEventList(@Path("gitRepo") String gitRepo, @Path("gitOwner") String gitOwner,@QueryMap HashMap<String, Object> query);
 
 
 }

@@ -12,10 +12,10 @@
                     <constructor-arg name="instanceName" value="instance1"/>
                     <constructor-arg name="propertyMap">
                         <map>
-                            <entry key="baseUrl" value="https://api.github.com/"/>
-                            <entry key="repo" value="sriThariduSangeeth"/>
-                            <entry key="owner" value="TestAndroid"/>
-                            <entry key="authToken" value="need genarate token"/>
+                            <entry key="baseUrl" value="https://api.github.com"/>
+                            <entry key="repo" value="TestAndroid"/>
+                            <entry key="owner" value="sriThariduSangeeth"/>
+                            <entry key="authToken" value="a955a29bbcc5277a2b671adab0574706364fed09"/>
                         </map>
                     </constructor-arg>
                 </bean>
@@ -24,8 +24,9 @@
                     <constructor-arg name="propertyMap">
                         <map>
                             <entry key="baseUrl" value="https://api.github.com/"/>
-                            <entry key="repo" value="admin"/>
-                            <entry key="owner" value="admin"/>
+                            <entry key="repo" value="sriThariduSangeeth"/>
+                            <entry key="owner" value="TestAndroid"/>
+                            <entry key="authToken" value="need genarate token"/>
                         </map>
                     </constructor-arg>
                 </bean>

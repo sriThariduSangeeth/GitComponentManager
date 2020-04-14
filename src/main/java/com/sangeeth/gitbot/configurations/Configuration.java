@@ -3,7 +3,9 @@ package com.sangeeth.gitbot.configurations;
 import java.util.List;
 
 /**
- * @author RPSPERERA on 4/4/2018
+ * @author dtsangeeth
+ * @created 11 / 02 / 2020
+ * @project GitComponentManager
  */
 public class Configuration {
 
