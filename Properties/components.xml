@@ -15,7 +15,7 @@
                             <entry key="baseUrl" value="https://api.github.com"/>
                             <entry key="repo" value="TestAndroid"/>
                             <entry key="owner" value="sriThariduSangeeth"/>
-                            <entry key="authToken" value="a955a29bbcc5277a2b671adab0574706364fed09"/>
+                            <entry key="authToken" value="auth"/>
                         </map>
                     </constructor-arg>
                 </bean>

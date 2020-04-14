@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a5a23cc-ec99-4605-9baf-a9970fb70ff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/util/ETLJsonObjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/util/ExecutorServiceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/components.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/components.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/configurations/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/configurations/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/retrofitEndPoints/GitAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/retrofitEndPoints/GitAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/service/GitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/service/GitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/service/GitServiceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sangeeth/gitbot/service/GitServiceHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C:\projects\logging.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -367,7 +359,7 @@
       <workItem from="1585159027502" duration="7343000" />
       <workItem from="1586669483832" duration="768000" />
       <workItem from="1586760218022" duration="800000" />
-      <workItem from="1586850326349" duration="23638000" />
+      <workItem from="1586850326349" duration="24227000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1581276126839</created>
@@ -432,11 +424,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585349493835</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="event end point">
+      <created>1586896001769</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586896001769</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57447000" />
+    <option name="totallyTimeSpent" value="58036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -491,7 +490,8 @@
     <MESSAGE value="api rest call" />
     <MESSAGE value="api rest fix" />
     <MESSAGE value="remove token" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove token" />
+    <MESSAGE value="event end point" />
+    <option name="LAST_COMMIT_MESSAGE" value="event end point" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
