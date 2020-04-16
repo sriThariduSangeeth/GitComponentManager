@@ -37,7 +37,7 @@ public class GitRetrofitDrive {
         OkHttpClient okHttpClient = new OkHttpClient().newBuilder().addInterceptor(chain -> {
             Request originalRequest = chain.request();
 
-            Request.Builder builder = originalRequest.newBuilder().header("Authorization",
+            Request.Builder builder = originalRequest.newBuilder().addHeader("Authorization",
                     this.auth);
 
             Request newRequest = builder.build();

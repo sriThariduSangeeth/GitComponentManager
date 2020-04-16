@@ -1,10 +1,7 @@
 package com.sangeeth.gitbot.retrofitEndPoints;
 
 import retrofit2.Call;
-import retrofit2.http.GET;
-import retrofit2.http.POST;
-import retrofit2.http.Path;
-import retrofit2.http.QueryMap;
+import retrofit2.http.*;
 
 import java.util.HashMap;
 
@@ -48,5 +45,29 @@ public interface GitAPI {
     @GET("/repos/{gitOwner}/{gitRepo}/issues/events")
     Call<Object> getEventList(@Path("gitRepo") String gitRepo, @Path("gitOwner") String gitOwner,@QueryMap HashMap<String, Object> query);
 
+
+    /**
+     * Gets the projects
+     *
+     * @param gitRepo - name of the repositaory
+     * @param gitOwner - name of the owner
+     * @param gitSha - id of the commit
+     *
+     * @return
+     */
+    @GET("repos/{gitOwner}/{gitRepo}/commits/{sha}")
+    Call<Object> getDefineCommit(@Path("gitRepo") String gitRepo, @Path("gitOwner") String gitOwner , @Path("sha") String gitSha);
+
+
+    /**
+     * Gets the projects
+     *
+     * @param query - queary and offset
+     *
+     * @return
+     */
+    @Headers({"Accept: application/vnd.github.cloak-preview"})
+    @GET("/search/commits")
+    Call<Object> getCommitOnDate(@QueryMap (encoded = true) HashMap<String, Object> query);
 
 }
