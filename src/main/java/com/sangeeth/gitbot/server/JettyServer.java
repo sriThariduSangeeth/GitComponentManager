@@ -62,6 +62,10 @@ public class JettyServer {
 
 
         try {
+            logger.info("...........+...START...+..............");
+            logger.info("Jetty Server Start : "+ this.serverPort);
+            logger.info("http://localhost:"+this.serverPort+"/dataservice/*");
+            logger.info("...........+...+++++...+..............");
             jettyServer.start();
             jettyServer.join();
         } catch (Exception ioex) {

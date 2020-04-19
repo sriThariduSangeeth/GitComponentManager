@@ -1,17 +1,20 @@
 package com.sangeeth.gitbot.service;
 
 import com.sangeeth.gitbot.configurations.Properties;
-import com.sangeeth.gitbot.core.ConfigXmlProperty;
 import com.sangeeth.gitbot.core.ReadPropertyFile;
 import com.sangeeth.gitbot.retrofitDrive.GitRetrofitDrive;
+import com.sangeeth.gitbot.stanford.NlpPipline;
 import com.sangeeth.gitbot.util.ETLJsonObjectMapper;
 import com.sangeeth.gitbot.util.ExecutorServiceManager;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.pipeline.CoreDocument;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.lang3.ObjectUtils;
+
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.springframework.lang.Nullable;
 
 import javax.ws.rs.*;
@@ -37,6 +40,8 @@ public class GitService {
     private String ownaerName;
     private Configuration reader;
     private GitRetrofitDrive gitRetrofitDrive;
+    private Properties properties;
+    private StanfordCoreNLP stanfordCoreNLP;
     public ETLJsonObjectMapper instance = ETLJsonObjectMapper.getInstance();
 
     /** @ex : http://localhost:8990/dataservice/git/instance1/getIssueList */
@@ -46,7 +51,6 @@ public class GitService {
     @Produces(MediaType.APPLICATION_JSON)
     public String getDefectList(@PathParam("instanceName") String instanceName , @PathParam("state") String state) {
         reader = ReadPropertyFile.getInstance().config();
-        Properties properties;
 
         properties = gitServiceHelper.getPropertiesList(instanceName);
 
@@ -76,7 +80,6 @@ public class GitService {
     @Produces(MediaType.APPLICATION_JSON)
     public String getEventList(@PathParam("instanceName") String instanceName) {
         reader = ReadPropertyFile.getInstance().config();
-        Properties properties;
 
         properties = gitServiceHelper.getPropertiesList(instanceName);
         gitRetrofitDrive = new GitRetrofitDrive(properties);
@@ -99,6 +102,8 @@ public class GitService {
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public String gitWebHook(@PathParam("instanceName") String instanceName , @PathParam("repoName") String repoName , @Context Request request , @Nullable String body) {
 
+
+        stanfordCoreNLP = NlpPipline.getInstance().standford();
         reader = ReadPropertyFile.getInstance().config();
         Properties properties = gitServiceHelper.getPropertiesList(instanceName);
         gitRetrofitDrive = new GitRetrofitDrive(properties.getPropertyMap().get("baseUrl"));
@@ -108,8 +113,19 @@ public class GitService {
         if(ObjectUtils.notEqual(response, null) || ObjectUtils.notEqual(0,response.size())){
             List<Map<String , Object>> commit = (List<Map<String, Object>>) response.get("commits");
             for (Map<String , Object> subCommit: commit) {
-                System.out.println(subCommit);
+
+                String text = subCommit.get("message").toString();
+                CoreDocument coreDocument = new CoreDocument(text);
+                stanfordCoreNLP.annotate(coreDocument);
+
+                List<CoreLabel>  keys = coreDocument.tokens();
+                for (CoreLabel k: keys) {
+                    System.out.println(k.lemma());
+                }
+
+                System.out.println(NlpPipline.getInstance().checkGitSimillorKeys(text));
             }
+
         }else {
             return "response not valid.";
         }

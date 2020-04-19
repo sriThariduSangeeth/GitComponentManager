@@ -8,6 +8,8 @@ package com.sangeeth.gitbot.util;
 
 public class Constants {
 
+    public static final String COMMA = ",";
+
     //Jetty configurations
     public static final String JETTY_SERVER_POST = "jetty.server.port";
 
