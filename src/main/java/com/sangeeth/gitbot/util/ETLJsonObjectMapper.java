@@ -45,15 +45,28 @@ public class ETLJsonObjectMapper {
         return null;
     }
 
+
+    public Map<String , Object> stringToMap(String data){
+        ObjectMapper mapper = new ObjectMapper();
+        try{
+            return mapper.readValue(data, Map.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
     public Map<String, Object> toMap(Object data) {
 
         try {
             String dataF = null;
             if (!(data instanceof String)) {
                 dataF = toString(data);
-            } //else {
-            // dataF = objectMapper.writeValueAsString(data);
-            // }
+            }
+//            else {
+//             dataF = objectMapper.writeValueAsString(data);
+//            }
             return objectMapper.readValue(dataF, new TypeReference<Map<String, Object>>() {
             });
         } catch (IOException e) {

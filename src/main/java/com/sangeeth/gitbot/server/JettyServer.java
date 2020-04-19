@@ -60,6 +60,7 @@ public class JettyServer {
                 "jersey.config.server.provider.classnames",
                 this.serverClasses);
 
+
         try {
             jettyServer.start();
             jettyServer.join();

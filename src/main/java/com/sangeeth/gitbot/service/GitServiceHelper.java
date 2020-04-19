@@ -6,6 +6,8 @@ import com.sangeeth.gitbot.retrofitDrive.GitRetrofitDrive;
 import com.sangeeth.gitbot.retrofitEndPoints.GitAPI;
 import com.sangeeth.gitbot.util.Converters;
 import com.sangeeth.gitbot.util.ETLJsonObjectMapper;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.log4j.LogManager;
@@ -152,6 +154,8 @@ public class GitServiceHelper {
                     //https://api.github.com/repos/sriThariduSangeeth/TestAndroid/contents/Change%20text.rtf?ref=c5a063d4427d83b868319775e1b50ec42144dce9
                     //to download file
                     //https://raw.githubusercontent.com/sriThariduSangeeth/TestAndroid/c5a063d4427d83b868319775e1b50ec42144dce9/Change%20text.rtf
+
+                    CharStream charStream = CharStreams.fromFileName("");
 
                     System.out.println(rescorrectCommit);
                 } catch (IOException e) {

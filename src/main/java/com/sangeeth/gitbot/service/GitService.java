@@ -12,16 +12,13 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.springframework.lang.Nullable;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import javax.ws.rs.core.Request;
+import java.util.*;
 
 /**
  * @author dtsangeeth
@@ -83,7 +80,6 @@ public class GitService {
 
         properties = gitServiceHelper.getPropertiesList(instanceName);
         gitRetrofitDrive = new GitRetrofitDrive(properties);
-        ETLJsonObjectMapper instance = ETLJsonObjectMapper.getInstance();
 
         if(properties.getPropertyMap().containsKey("repo") && properties.getPropertyMap().containsKey("owner")){
             repoName = properties.getPropertyMap().get("repo").toString();
@@ -95,6 +91,29 @@ public class GitService {
         }
 
         return "";
+    }
+
+    @POST
+    @Path("{instanceName}/{repoName}/gitWebHook")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    public String gitWebHook(@PathParam("instanceName") String instanceName , @PathParam("repoName") String repoName , @Context Request request , @Nullable String body) {
+
+        reader = ReadPropertyFile.getInstance().config();
+        Properties properties = gitServiceHelper.getPropertiesList(instanceName);
+        gitRetrofitDrive = new GitRetrofitDrive(properties.getPropertyMap().get("baseUrl"));
+
+        Map<String , Object> response = instance.stringToMap(body);
+
+        if(ObjectUtils.notEqual(response, null) || ObjectUtils.notEqual(0,response.size())){
+            List<Map<String , Object>> commit = (List<Map<String, Object>>) response.get("commits");
+            for (Map<String , Object> subCommit: commit) {
+                System.out.println(subCommit);
+            }
+        }else {
+            return "response not valid.";
+        }
+        return "ok";
     }
 
 }

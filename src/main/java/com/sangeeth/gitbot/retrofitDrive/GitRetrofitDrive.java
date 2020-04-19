@@ -2,6 +2,7 @@ package com.sangeeth.gitbot.retrofitDrive;
 
 import com.google.gson.GsonBuilder;
 import com.sangeeth.gitbot.configurations.Properties;
+import com.sangeeth.gitbot.retrofitEndPoints.ElasticAPI;
 import com.sangeeth.gitbot.retrofitEndPoints.GitAPI;
 import okhttp3.Credentials;
 import okhttp3.JavaNetCookieJar;
@@ -21,7 +22,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class GitRetrofitDrive {
 
-    private String auth;
+    private String auth = "";
     private String baseUrl;
     private Class<?> className;
 
@@ -31,6 +32,11 @@ public class GitRetrofitDrive {
         this.baseUrl = pro.getPropertyMap().get("baseUrl");
         this.className = GitAPI.class;
 
+    }
+
+    public GitRetrofitDrive(String base){
+        this.baseUrl = base;
+        this.className = ElasticAPI.class;
     }
 
     public Object invoke() {

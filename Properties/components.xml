@@ -23,10 +23,8 @@
                     <constructor-arg name="instanceName" value="instance2"/>
                     <constructor-arg name="propertyMap">
                         <map>
-                            <entry key="baseUrl" value="https://api.github.com/"/>
-                            <entry key="repo" value="sriThariduSangeeth"/>
-                            <entry key="owner" value="TestAndroid"/>
-                            <entry key="authToken" value="need genarate token"/>
+                            <entry key="baseUrl" value="http://localhost:9200"/>
+                            <entry key="indexName" value="sriThariduSangeeth"/>
                         </map>
                     </constructor-arg>
                 </bean>

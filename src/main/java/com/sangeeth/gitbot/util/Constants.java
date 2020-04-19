@@ -11,5 +11,11 @@ public class Constants {
     //Jetty configurations
     public static final String JETTY_SERVER_POST = "jetty.server.port";
 
+    //Git configurations
+    public static final String GIT_DEFECTS_KEYS = "git.defects.autoclose.keywords";
+
+    //Stanford NLP
+    public static final String STANFORD_NLP_ANNOTATE = "stanford.nlp.annotate.propertie";
+
 
 }
