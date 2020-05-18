@@ -2,13 +2,13 @@ package com.sangeeth.gitbot.service;
 
 import com.sangeeth.gitbot.configurations.Properties;
 import com.sangeeth.gitbot.core.ConfigXmlProperty;
+import com.sangeeth.gitbot.fileTansformation.ClassTransformation;
 import com.sangeeth.gitbot.retrofitDrive.GitRetrofitDrive;
 import com.sangeeth.gitbot.retrofitEndPoints.GitAPI;
 import com.sangeeth.gitbot.util.Converters;
 import com.sangeeth.gitbot.util.ETLJsonObjectMapper;
-import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.CharStreams;
-import org.apache.commons.configuration2.Configuration;
+import com.sangeeth.gitbot.util.client.classifier.NaiveBayesClassifier;
+import com.sangeeth.gitbot.util.client.elastic.ElasticClient;
 import org.apache.commons.lang3.ObjectUtils;
 
 
@@ -16,7 +16,6 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import retrofit2.Call;
 
-import java.awt.*;
 import java.io.IOException;
 import java.util.*;
 import java.util.List;
@@ -70,14 +69,13 @@ public class GitServiceHelper {
 
     }
 
-    public void getAllEvents(GitRetrofitDrive retrofitDriver, ETLJsonObjectMapper instance  ,
-                                 String repo , String owner  ){
-        List<Map<String, Object>> finalEventList = new LinkedList<>();
+    public void getAllEvents( GitRetrofitDrive retrofitDriver, ETLJsonObjectMapper instance  ,
+                             String repo , String owner , String instanceName ){
+//        List<Map<String, Object>> finalEventList = new LinkedList<>();
         try {
             boolean eventDataAvailable = true;
             int page = 1;
-            int limit = 100;
-            int eventfullcount = 0;
+            int limit = 50;
             HashMap<String, Object> events = new LinkedHashMap<>();
 
             do{
@@ -90,16 +88,15 @@ public class GitServiceHelper {
                 if (!ObjectUtils.notEqual(responseList, null) || !ObjectUtils.notEqual(0, responseList.size())) {
                     eventDataAvailable = false;
                 } else {
-                    finalEventList.addAll(responseList);
-                    getFixFileChanges(retrofitDriver , responseList , instance, repo , owner);
+                    logger.info("One event set catch form" + repo +" and event count : " + responseList.size());
+
+                    getFixFileChanges( retrofitDriver , responseList , instance, repo , owner , instanceName);
+
                 }
 
                 page ++;
             }while (eventDataAvailable);
 
-            if(eventfullcount == finalEventList.size()){
-                System.out.println("this is ok");
-            }
 
         }catch (IOException e){
             logger.error(e.getMessage(), e);
@@ -107,62 +104,52 @@ public class GitServiceHelper {
 
     }
 
-    public void getFixFileChanges(GitRetrofitDrive retrofitDriver, List<Map<String, Object>>  respon , ETLJsonObjectMapper instance , String repo , String owner){
-
+    public void getFixFileChanges( GitRetrofitDrive retrofitDriver,
+                                  List<Map<String, Object>>  respon , ETLJsonObjectMapper instance , String repo , String owner , String instanceName){
+        ClassTransformation classTransformation = new ClassTransformation(owner, repo , instanceName , instance);
 
         respon.forEach( eventResObject -> {
 
             String eventState = String.valueOf(eventResObject.get("event"));
-
-            if(eventResObject.containsKey("commit_id") && eventState.equalsIgnoreCase("Closed")){
+            if(ObjectUtils.notEqual(eventResObject.get("commit_id"), null)  && eventState.equalsIgnoreCase("Closed")){
 
                 Map<String , Object> issue = instance.toMap(eventResObject.get("issue"));
+                String title = instance.toString(issue.get("title"));
+                String body = instance.toString(issue.get("body"));
                 String sha = String.valueOf(eventResObject.get("commit_id"));
-                String date = String.valueOf(issue.get("created_at")).split("T")[0];
+                long time = Converters.convertDateTimeToEpoch(issue.get("created_at").toString());
+                String dateTime = Converters.convertEpochToDateTime(time - 1800).split("\\+")[0];
 
-                boolean eventDataAvailable = true;
-                int page = 1;
-                int limit = 100;
-
-                List<Map<String, Object>> commitListitem = new LinkedList<>();
                 HashMap<String , Object> comm = new LinkedHashMap<>();
-                comm.put("q","repo:"+owner+"/"+repo+"+committer-date:"+date);
-                comm.put("per_page", limit);
 
-                try {
+                comm.put("since", dateTime+"Z");
+                comm.put("until", issue.get("created_at"));
 
-                    Call<Object> correctCommit = ((GitAPI)retrofitDriver.invoke()).getDefineCommit(repo , owner , sha );
-                    Map<String, Object> rescorrectCommit = instance.toMap(correctCommit.execute().body());
+                if(NaiveBayesClassifier.getInstance().checkPositiveOrNegative(title) || NaiveBayesClassifier.getInstance().checkPositiveOrNegative(body)){
+                    try {
 
-                    do{
-                        comm.put("page", page);
-                        Call<Object> commitList = ((GitAPI)retrofitDriver.invoke()).getCommitOnDate(comm);
-                        Map<String, Object> rescommitList = instance.toMap(commitList.execute().body());
-                        List<Map<String, Object>> ff = (List<Map<String, Object>>) rescommitList.get("items");
+                        //get fix commit
+                        Call<Object> correctCommit = ((GitAPI)retrofitDriver.invoke()).getDefineCommit(repo , owner , sha );
+                        Map<String, Object> rescorrectCommit = instance.toMap(correctCommit.execute().body());
 
-                        if (!ObjectUtils.notEqual(ff, null) || !ObjectUtils.notEqual(0, ff.size())) {
-                            eventDataAvailable = false;
-                        }else {
-                            commitListitem.addAll(ff);
+                        //get issue infected commit
+                        Call<Object> commitList = ((GitAPI)retrofitDriver.invoke()).getCommitByDateTime(repo , owner ,comm);
+                        List<Map<String, Object>> rescommitList = instance.toMapList(commitList.execute().body());
+                        Map<String, Object> closetWrongCommit = getClosestCommit(rescommitList ,issue.get("created_at").toString());
+
+                        Map<String , Object> out = classTransformation.downloadFileAndTransform( issue , instance, rescorrectCommit , closetWrongCommit );
+
+                        // Elastic insert
+                        if(ObjectUtils.notEqual(out,null)){
+                            ElasticClient elasticClient = new ElasticClient();
+                            elasticClient.insert("defects" , out);
                         }
-                        page ++;
-                    }while (eventDataAvailable);
 
-                    Map<String, Object> closetWrongCommit = getClosestCommit(commitListitem, String.valueOf(issue.get("created_at")));
-
-                    //rescorrectCommit
-
-                    //closetWrongCommit
-                    //https://api.github.com/repos/sriThariduSangeeth/TestAndroid/contents/Change%20text.rtf?ref=c5a063d4427d83b868319775e1b50ec42144dce9
-                    //to download file
-                    //https://raw.githubusercontent.com/sriThariduSangeeth/TestAndroid/c5a063d4427d83b868319775e1b50ec42144dce9/Change%20text.rtf
-
-                    CharStream charStream = CharStreams.fromFileName("");
-
-                    System.out.println(rescorrectCommit);
-                } catch (IOException e) {
-                    logger.error(e.getMessage(), e);
+                    } catch (IOException e) {
+                        logger.error(e.getMessage(), e);
+                    }
                 }
+
 
             }
 
@@ -173,13 +160,13 @@ public class GitServiceHelper {
 
         long time = Converters.convertDateTimeToEpoch(datetime);
         Map<String,Object> committer = (Map<String, Object>) ((Map<String, Object>) rescommitList.get(0).get("commit")).get("committer");
-        long firstTime = Converters.convertDateTimeToEpoch(String.valueOf(committer.get("date")).split("\\.")[0]+"z");
+        long firstTime = Converters.convertDateTimeToEpoch(String.valueOf(committer.get("date")));
         long distance = Math.abs(firstTime - time);
         int idx = 0;
 
         for(int c = 1; c < rescommitList.size(); c++){
             Map<String,Object> comm = (Map<String, Object>) ((Map<String, Object>) rescommitList.get(c).get("commit")).get("committer");
-            long valTime = Converters.convertDateTimeToEpoch(String.valueOf(comm.get("date")).split("\\.")[0]+"z");
+            long valTime = Converters.convertDateTimeToEpoch(String.valueOf(comm.get("date")));
             long cdistance = Math.abs(valTime - time);
             if(cdistance < distance ){
                 idx = c;

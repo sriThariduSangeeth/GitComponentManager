@@ -2,7 +2,6 @@ package com.sangeeth.gitbot.retrofitDrive;
 
 import com.google.gson.GsonBuilder;
 import com.sangeeth.gitbot.configurations.Properties;
-import com.sangeeth.gitbot.retrofitEndPoints.ElasticAPI;
 import com.sangeeth.gitbot.retrofitEndPoints.GitAPI;
 import okhttp3.Credentials;
 import okhttp3.JavaNetCookieJar;
@@ -26,25 +25,20 @@ public class GitRetrofitDrive {
     private String baseUrl;
     private Class<?> className;
 
-    public GitRetrofitDrive(Properties pro) {
+    public GitRetrofitDrive(String authToken , String baseUrl) {
 
-        this.auth = pro.getPropertyMap().get("authToken");
-        this.baseUrl = pro.getPropertyMap().get("baseUrl");
+        this.auth = authToken;
+        this.baseUrl = baseUrl;
         this.className = GitAPI.class;
 
     }
 
-    public GitRetrofitDrive(String base){
-        this.baseUrl = base;
-        this.className = ElasticAPI.class;
-    }
-
-    public Object invoke() {
+    public Object invoke() throws NullPointerException{
         OkHttpClient okHttpClient = new OkHttpClient().newBuilder().addInterceptor(chain -> {
             Request originalRequest = chain.request();
 
             Request.Builder builder = originalRequest.newBuilder().addHeader("Authorization",
-                    this.auth);
+                    "Bearer "+this.auth);
 
             Request newRequest = builder.build();
             return chain.proceed(newRequest);

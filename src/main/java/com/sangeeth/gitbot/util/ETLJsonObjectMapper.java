@@ -6,8 +6,12 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 
+import javax.json.JsonObject;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
 
@@ -19,7 +23,7 @@ import java.util.Map;
 public class ETLJsonObjectMapper {
 
     private ObjectMapper objectMapper = new ObjectMapper();
-
+    private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
     private static Logger logger = LogManager.getLogger(ETLJsonObjectMapper.class);
 
 
@@ -36,13 +40,52 @@ public class ETLJsonObjectMapper {
         return objectMapper;
     }
 
-    private String toString(Object data) {
+    /**
+     * Converts any Object to String.
+     *
+     * @param data the object
+     * @return the string
+     */
+
+    public String toString(Object data) {
         try {
             return objectMapper.writeValueAsString(data);
         } catch (JsonProcessingException e) {
             logger.error(e.getMessage(), e);
         }
         return null;
+    }
+
+    /**
+     * Converts String value to a JOSN.
+     *
+     *
+     * @param object the object
+     * @return the string
+     */
+    public  String toJson(final String object) {
+        if (object != null && (object.startsWith("[") || object.startsWith("{")
+                || (object.startsWith("\"[") || object.startsWith("\"{")))) {
+            return object;
+        } else
+            return "{\"" + "{\"success\" : 1}" + "\":\"" + object + "\"}";
+    }
+
+    /**
+     * Converts any Object to JSON.
+     *
+     * @param object the object
+     * @return the string
+     */
+    public  String toJsonfrmObject(Object object) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.setDateFormat(simpleDateFormat);
+            return mapper.writeValueAsString(object);
+        } catch (IOException e) {
+            logger.error("Invalid JSON!", e);
+        }
+        return "";
     }
 
 
@@ -56,6 +99,14 @@ public class ETLJsonObjectMapper {
 
         return null;
     }
+
+
+    /**
+     * Converts Json Object to Map<obj></>.
+     *
+     * @param data the object
+     * @return the Map<String, Object>
+     */
 
     public Map<String, Object> toMap(Object data) {
 
@@ -75,6 +126,13 @@ public class ETLJsonObjectMapper {
         return null;
     }
 
+    /**
+     * Converts Json Object to List<obj></>.
+     *
+     * @param data the object
+     * @return the List<Map<String, Object>>
+     */
+
     public List<Map<String, Object>> toMapList(Object data) {
 
         try {
@@ -90,6 +148,32 @@ public class ETLJsonObjectMapper {
             logger.error(e.getMessage(), e);
         }
         return null;
+    }
+
+    public static String toJson(final Map<String, Object> metaData) {
+
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.setDateFormat(simpleDateFormat);
+            return mapper.writeValueAsString(metaData);
+        } catch (IOException e) {
+            logger.error("Invalid JSON!", e);
+        }
+        return "";
+    }
+
+    public String toSearchJson (Map<String,String> parm) throws ParseException {
+
+        JSONObject obj = new JSONObject();
+        for (Map.Entry<String, String> entry : parm.entrySet()) {
+            obj.put(entry.getKey(), entry.getValue());
+        }
+        JSONObject obj1 = new JSONObject();
+        obj1.put("match" , obj);
+        JSONObject obj2 = new JSONObject();
+        obj2.put("query" , obj1);
+
+        return obj2.toString();
     }
 
     private static class Holder {

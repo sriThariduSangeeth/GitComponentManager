@@ -1,4 +1,4 @@
-package com.sangeeth.gitbot.stanford;
+package com.sangeeth.gitbot.util.client.stanford;
 
 
 import com.sangeeth.gitbot.core.ReadPropertyFile;
@@ -47,6 +47,18 @@ public class NlpPipline {
            }
         }
         return false;
+    }
+
+    public List<String> commitConvertToBagOfWords(String phare){
+        List<String> res = new ArrayList<>();
+
+        CoreDocument coreDocument = new CoreDocument(phare);
+        stanfordCoreNLP.annotate(coreDocument);
+
+        for (CoreLabel cl: coreDocument.tokens()) {
+            res.add(cl.lemma());
+        }
+        return res;
     }
 
     public StanfordCoreNLP standford(){

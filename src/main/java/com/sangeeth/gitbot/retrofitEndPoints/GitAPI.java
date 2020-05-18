@@ -1,5 +1,6 @@
 package com.sangeeth.gitbot.retrofitEndPoints;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.*;
 
@@ -16,11 +17,9 @@ import java.util.HashMap;
 
 public interface GitAPI {
 
-    @GET("/rest/api/2/project")
-    Call<Object> getProjects();
 
     /**
-     * Gets the projects
+     * Gets the All Issues
      *
      * @param gitRepo - name of the repositaory
      * @param gitOwner - name of the owner
@@ -69,5 +68,30 @@ public interface GitAPI {
     @Headers({"Accept: application/vnd.github.cloak-preview"})
     @GET("/search/commits")
     Call<Object> getCommitOnDate(@QueryMap (encoded = true) HashMap<String, Object> query);
+
+
+    /**
+     * Gets the projects
+     *
+     * @param query - queary and offset
+     *
+     * @return
+     */
+    @GET("repos/{gitOwner}/{gitRepo}/commits")
+    Call<Object> getCommitByDateTime(@Path("gitRepo") String gitRepo, @Path("gitOwner") String gitOwner , @QueryMap HashMap<String, Object> query);
+
+    /**
+     * Gets the file content
+     *
+     * @param gitRepo - name of the repositaory
+     * @param gitOwner - name of the owner
+     * @param gitSha - id of the commit
+     *
+     * @return
+     *  //https://raw.githubusercontent.com/sriThariduSangeeth/TestAndroid/c5a063d4427d83b868319775e1b50ec42144dce9/Change%20text.rtf
+     */
+    @GET("{gitOwner}/{gitRepo}/{sha}/{file}")
+    Call<ResponseBody> getFileDownload(@Path("gitRepo") String gitRepo, @Path("gitOwner") String gitOwner , @Path("sha") String gitSha , @Path("file") String filename);
+
 
 }

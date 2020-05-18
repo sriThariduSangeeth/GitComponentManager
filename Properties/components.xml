@@ -13,9 +13,10 @@
                     <constructor-arg name="propertyMap">
                         <map>
                             <entry key="baseUrl" value="https://api.github.com"/>
-                            <entry key="repo" value="TestAndroid"/>
-                            <entry key="owner" value="sriThariduSangeeth"/>
-                            <entry key="authToken" value="auth"/>
+                            <entry key="contentBaseUrl" value="https://raw.githubusercontent.com"/>
+                            <entry key="repo" value="mockito"/>
+                            <entry key="owner" value="mockito"/>
+                            <entry key="authToken" value=""/>
                         </map>
                     </constructor-arg>
                 </bean>

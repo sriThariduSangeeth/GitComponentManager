@@ -19,5 +19,8 @@ public class Constants {
     //Stanford NLP
     public static final String STANFORD_NLP_ANNOTATE = "stanford.nlp.annotate.propertie";
 
+    //Elastic Base URL
+    public static final String ELASTIC_BASE_URL = "elastic.base.url";
+
 
 }
