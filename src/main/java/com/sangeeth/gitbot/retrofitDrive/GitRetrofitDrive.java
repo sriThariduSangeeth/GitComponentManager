@@ -30,6 +30,7 @@ public class GitRetrofitDrive {
         this.auth = authToken;
         this.baseUrl = baseUrl;
         this.className = GitAPI.class;
+        
 
     }
 
@@ -55,4 +56,5 @@ public class GitRetrofitDrive {
                 .client(okHttpClient)
                 .build().create(className);
     }
+
 }

@@ -13,6 +13,8 @@ public class Constants {
     //Jetty configurations
     public static final String JETTY_SERVER_POST = "jetty.server.port";
 
+    public static final String VERSION_CONTROL_TYPR = "version.control.type";
+
     //Git configurations
     public static final String GIT_DEFECTS_KEYS = "git.defects.autoclose.keywords";
 

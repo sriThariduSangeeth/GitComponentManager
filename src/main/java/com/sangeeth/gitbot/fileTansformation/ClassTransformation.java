@@ -31,6 +31,7 @@ public class ClassTransformation {
     private String repo;
     private GitServiceHelper gitServiceHelper = new GitServiceHelper();
     private Properties properties;
+    private boolean enable = false;
 
     public ClassTransformation(String autho , String repo , String instanceName , ETLJsonObjectMapper instance){
         this.auther = autho;
@@ -71,13 +72,19 @@ public class ClassTransformation {
 
                         Call<ResponseBody> fixClassFile = ((GitAPI)gitRetrofitDriveForDown.invoke()).getFileDownload(this.repo , this.auther ,fixCommitShh, fileName );
                         String fixClassFileOut = fixClassFile.execute().body().string();
-                        AntlrPaser antlrPaser1 = new AntlrPaser(fixClassFileOut);
-                        String fixSekeloton = antlrPaser1.getCodeSkeleton();
 
                         Call<ResponseBody> worngClassFile = ((GitAPI)gitRetrofitDriveForDown.invoke()).getFileDownload(this.repo , this.auther ,wrongCommitShh, fileName );
                         String worngclassFileOut = worngClassFile.execute().body().string();
-                        AntlrPaser antlrPaser2 = new AntlrPaser(fixClassFileOut);
-                        String wrongSekeloton = antlrPaser2.getCodeSkeleton();
+
+                        if(enable){
+                            AntlrPaser antlrPaser1 = new AntlrPaser(fixClassFileOut);
+                            String fixSekeloton = antlrPaser1.getCodeSkeleton();
+
+                            AntlrPaser antlrPaser2 = new AntlrPaser(fixClassFileOut);
+                            String wrongSekeloton = antlrPaser2.getCodeSkeleton();
+                            param.put("fixSekeloton", fixSekeloton);
+                            param.put("wrongSekeloton", wrongSekeloton);
+                        }
 
                         if(ObjectUtils.notEqual(fixClassFileOut,null) && ObjectUtils.notEqual(worngclassFileOut,null)){
                             param.put("issue_fix_class", fixClassFileOut);

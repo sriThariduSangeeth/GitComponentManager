@@ -17,6 +17,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 public class JettyServer {
 
     private String serverClasses;
+    private String type;
     private int serverPort;
     private Server jettyServer;
     private ServletHolder jerseyServlet;
@@ -40,8 +41,9 @@ public class JettyServer {
     }
 
 
-    public void setServerPort(int serverPort) {
+    public void setServerPort(int serverPort , String type) {
         this.serverPort = serverPort;
+        this.type = type;
     }
 
     public void start(){

@@ -4,6 +4,7 @@ import com.sangeeth.gitbot.fileTansformation.ClassTransformation;
 import com.sangeeth.gitbot.retrofitDrive.GitRetrofitDrive;
 import com.sangeeth.gitbot.retrofitEndPoints.GitAPI;
 import com.sangeeth.gitbot.util.ETLJsonObjectMapper;
+import com.sangeeth.gitbot.util.client.antlr.AntlrPaser;
 import com.sangeeth.gitbot.util.client.elastic.ElasticClient;
 import com.sangeeth.gitbot.util.client.stanford.NlpPipline;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
@@ -32,6 +33,7 @@ public class GitHookServiceHelper {
     private String commit_Sha = null;
     private String commiter = null;
     private ElasticClient elasticClient;
+    private boolean enable = false;
 
 
     public void checkCommitViolation( GitRetrofitDrive gitRetrofitDrive, Map<String, Object> respon  ,  String repoName, String owner){
@@ -43,7 +45,9 @@ public class GitHookServiceHelper {
         String text = respon.get("message").toString();
         this.commiter = (String) ((Map<String, Object>) respon.get("committer")).get("username");
 
-        List<String> bagOfWords = NlpPipline.getInstance().commitConvertToBagOfWords(text);
+        if(enable){
+            List<String> bagOfWords = NlpPipline.getInstance().commitConvertToBagOfWords(text);
+        }
 
         List<String> added_files = (List<String>) respon.get("added");
 
@@ -84,10 +88,18 @@ public class GitHookServiceHelper {
             elasticClient = new ElasticClient();
             Map<String , Object> result = elasticClient.search("defects" , queary);
 
+
+
             double score = (double) result.get("max_score");
 
             if(ObjectUtils.notEqual(result , null) && score > 5.0){
                 //here
+
+                if(enable){
+                    AntlrPaser antlrPaser1 = new AntlrPaser(classFileOut);
+                    String fixSekeloton = antlrPaser1.getCodeSkeleton();
+                    ela_input.put("skeleton" , fixSekeloton);
+                }
 
                 Map<String , Object> ela_result = (Map<String, Object>) ((List<Map<String, Object>>)result.get("hits")).get(0).get("_source");
                 ela_input.put("repo", this.repoName);

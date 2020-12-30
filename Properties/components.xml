@@ -14,9 +14,7 @@
                         <map>
                             <entry key="baseUrl" value="https://api.github.com"/>
                             <entry key="contentBaseUrl" value="https://raw.githubusercontent.com"/>
-                            <entry key="repo" value="mockito"/>
-                            <entry key="owner" value="mockito"/>
-                            <entry key="authToken" value=""/>
+                            <entry key="authToken" value="7454a896fad565866be3b057073a6314898eb0d5"/>
                         </map>
                     </constructor-arg>
                 </bean>
